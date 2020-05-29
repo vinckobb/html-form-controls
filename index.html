@@ -2,6 +2,7 @@
 <html>
 <head>
     <link rel="stylesheet" type="text/css" href="app.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 </head>
@@ -32,11 +33,35 @@
                         <label>Checkbox</label>
                         <input 
                             type="checkbox"/>
+                        <input 
+                            type="checkbox"
+                            checked/>
+                        <input 
+                            type="checkbox"
+                            disabled/>
+                        <input 
+                            type="checkbox"
+                            disabled
+                            checked/>
                     </div>
                     <div class="flex-1">
                         <label>Radio</label>
-                        <input 
-                            type="checkbox"/>
+                        <div class="flex-row">
+                            <div class="flex-1 flex-row align-items-center">
+                                <input type="radio" id="huey" name="drone" value="huey" checked>
+                                <label for="huey">Value 1</label>
+                            </div>
+                            
+                            <div class="flex-1 flex-row align-items-center">
+                                <input type="radio" id="dewey" name="drone" value="dewey">
+                                <label for="dewey">Value 2</label>
+                            </div>
+                            
+                            <div class="flex-1 flex-row align-items-center">
+                                <input type="radio" id="louie" name="drone" value="louie" disabled>
+                                <label for="louie">Value 3</label>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
